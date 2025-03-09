@@ -13,7 +13,7 @@ https://github.com/Kaboom-Corporation/traefik-as-a-reverse-proxy
 ### Edit data
 1. Then open the file `traefik-configurations/traefik-data/traefik.yml` and change `example.com` to the email address where the certificate information will be sent.
 
-2. And then run the command `htpasswd -nb admin Your_security_password`. 
+2. And then run the command `htpasswd -nb admin Your_security_password` (needed install `apt-get install apache2-utils`). 
 Where `Your_security_password` is your super secret password.
 Then we change the `PASSWORD` in the file `traefik-configurations/traefik-data/configurations/dynamic.yml` to the obtained value.
 
